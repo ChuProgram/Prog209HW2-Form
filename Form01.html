@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example 1</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+  
+
+    <!--Buttons-->
+    <fieldset id="buttons">
+      <legend>Welcome to Useless Web Site</legend>
+      <input type="submit" value="Click for New User" onclick="newUserButton()">
+      <input type="submit" value="Click for Existing User" onclick="existingUserButton()">
+    </fieldset>
+
+    <!--New User-->
+    <!--       The <fieldset> tag is used to group related elements in a form. -->
+    <fieldset id="newCust">
+      <!--       The <legend> tag is puts a title on this subset of the form -->
+      <legend>New User</legend>
+      <!--       for= some id connects the lable to to the input box -->
+      <label for="custname">User Name:</label>
+      <input name="custname" id="custname" />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+
+      <br>
+
+      <label for="city">City:</label>
+      <input name="city" id="city" />
+
+      <label for="state">State (abbr.):</label>
+      <input name="state" id="state" />
+
+      <!-- here we submit to a local js file -->
+      <input type="submit" value="Login" onclick="newUserSubmitEvent()">
+
+    </fieldset>
+
+
+    <!--Existing User-->
+    <fieldset id="existingCust">
+      <legend>Existing User</legend>
+
+      <label for="custname2">User Name:</label>
+      <input name="custname2" id="custname2" />
+
+      <label for="password2">Password:</label>
+      <input type="password" name="password2" id="password2" />
+
+      <input type="submit" value="Login" onclick="existingUserSubmitEvent()">
+    </fieldset>
+
+  </form>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

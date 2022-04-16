@@ -1,0 +1,22 @@
+
+fieldset {
+font-size:20px;
+background-color:rgb(255,246,205);	
+border:1px solid rgb(239, 19, 195);
+margin:10px 0px 30px 2.5%;
+width:70%;
+}
+
+/*  this overides the generic fieldset css setting for this item by id */
+#buttons {
+background-color:rgb(179, 213, 240);	
+border:1px solid rgb(1, 109, 109);
+margin:10px 0px 30px 2.5%;
+width:46%;
+}
+
+#existingCust {
+border:1px solid rgb(4, 235, 189)
+}
+
+
